@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Contact Page</title>
+        <title>Home Page</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
@@ -14,7 +14,7 @@
             <a href="/contact">Contact</a>
         </nav>
 
-        <h1>Hello from the Contact Page.</h1>
+        {{ $slot }}
         <script src="" async defer></script>
     </body>
 </html>
