@@ -47,10 +47,6 @@ class JobController extends Controller
 
     public function edit(Job $job)
     {
-        if (Auth::guest()) {
-            return redirect('/login');
-        }
-
         Gate::authorize('edit-job', $job);
 
         return view('jobs.edit', ['job' => $job]);
@@ -72,6 +68,8 @@ class JobController extends Controller
 
     public function destroy(Job $job)
     {
+        Gate::authorize('edit-job', $job);
+
         $job->delete();
 
         return redirect('/jobs');
