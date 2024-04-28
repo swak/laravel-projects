@@ -6,7 +6,7 @@
         <title>Home Page</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        @vite(['resources/js/app.js','resources/css/app.css'])
+        @vite(['resources/js/app.js'])
     </head>
     <body class="h-full">
 
